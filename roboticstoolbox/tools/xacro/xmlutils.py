@@ -121,7 +121,7 @@ def fixed_writexml(self, writer, indent="", addindent="", newl=""):   # pragma: 
 
     for a_name in a_names:
         writer.write(" %s=\"" % a_name)
-        xml.dom.minidom._write_data(writer, attrs[a_name].value)
+        xml.dom.minidom._write_data(writer, attrs[a_name].value, None)
         writer.write("\"")
     if self.childNodes:
         if len(self.childNodes) == 1 \
