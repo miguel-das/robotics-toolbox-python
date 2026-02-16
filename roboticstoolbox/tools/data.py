@@ -144,8 +144,11 @@ def rtb_path_to_datafile(*filename, local=True):
             return p
 
     # otherwise, look for it in rtbdata
+    try:
+        rtbdata = importlib.import_module("rtbdata")  # external package if present
+    except ModuleNotFoundError:
+        rtbdata = importlib.import_module("roboticstoolbox.rtbdata")  # vendored fallback
 
-    rtbdata = importlib.import_module("rtbdata")
     root = Path(rtbdata.__path__[0])
     
     path = root / filename
