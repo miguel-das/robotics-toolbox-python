@@ -1,3 +1,9 @@
+# robotics-toolbox-python fork
+
+This is a fork of petercorke's `robotics-toolbox-python` with fixes for modern Python versions such as 3.14
+
+Upstream project: https://github.com/petercorke/robotics-toolbox-python
+
 # Robotics Toolbox for Python
 
 [![A Python Robotics Package](https://raw.githubusercontent.com/petercorke/robotics-toolbox-python/master/.github/svg/py_collection.min.svg)](https://github.com/petercorke/robotics-toolbox-python)
